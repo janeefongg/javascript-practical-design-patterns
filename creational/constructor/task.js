@@ -1,8 +1,10 @@
 'use strict'
 
+var Repo = require('../module/taskRepository');
+
 class Task {
-  constructor(name) {
-    this.name = name;
+  constructor(data) {
+    this.name = data.name;
     this.completed = false;
   }
 
@@ -14,6 +16,7 @@ class Task {
 
   save() {
     console.log('Saving task: ' + this.name);
+    Repo.save(this);
   }
 }
 
