@@ -1,8 +1,10 @@
-var myrepo = require('./repo');
+'use strict'
+
+const myrepo = require('./repo');
 
 // var myrepo = repo();
 
-var taskHandler = function () {
+const taskHandler = () => {
   return {
     save: function () {
       myrepo.save('Hi from taskhandler');

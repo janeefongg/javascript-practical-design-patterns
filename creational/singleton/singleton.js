@@ -1,23 +1,27 @@
-var TaskRepo = (function () {
-  var taskRepo;
+'use strict'
 
-  function createRepo() {
+const TaskRepo = () => {
+  let taskRepo;
+
+  const createRepo = () => {
     var taskRepo = new Object("Task");
     return taskRepo;
   };
 
-  return {
-    getInstance: function () {
-      if (!taskRepo) {
-        taskRepo = createRepo();
-      }
-      return taskRepo;
+  const getInstance = () => {
+    if (!taskRepo) {
+      taskRepo = createRepo();
     }
+    return taskRepo;
+  }
+  
+  return {
+    getInstance: getInstance
   };
-})();
+}();
 
-var repo1 = TaskRepo.getInstance();
-var repo2 = TaskRepo.getInstance();
+const repo1 = TaskRepo.getInstance();
+const repo2 = TaskRepo.getInstance();
 
 if (repo1 === repo2){
   console.log("Same TaskRepo")

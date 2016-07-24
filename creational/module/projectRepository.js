@@ -1,15 +1,17 @@
-var repo = function () {
+'use strict'
 
-  var db = {};
+const repo = () => {
 
-  var get = function (id) {
+  let db = {};
+
+  const get = function (id) {
     console.log('Getting project ' + id);
     return {
       name: 'New project'
     }
   };
 
-  var save = function (project) {
+  const save = function (project) {
     console.log('Saving ' + project.name + ' to the db');
   };
 

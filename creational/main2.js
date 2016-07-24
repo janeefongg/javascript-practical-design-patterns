@@ -1,11 +1,15 @@
-var Task = require('./constructor/task');
-var repoFactory = require('./factory/repoFactorywCache');
+'use strict'
 
-var task1 = new Task(repoFactory.getRepo('task').get(1));
-var task2 = new Task(repoFactory.getRepo('task').get(2));
+const Task = require('./constructor/task');
+const repoFactory = require('./factory/repoFactorywCache');
 
-var user = repoFactory.getRepo('user').get(1);
-var project = repoFactory.getRepo('project').get(1);
+console.log(repoFactory.getRepo);
+
+let task1 = new Task(repoFactory.getRepo('task').get(1));
+let task2 = new Task(repoFactory.getRepo('task').get(2));
+
+let user = repoFactory.getRepo('user').get(1);
+let project = repoFactory.getRepo('project').get(1);
 
 task1.user = user;
 task1.project = project;

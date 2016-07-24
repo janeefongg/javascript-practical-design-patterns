@@ -1,13 +1,15 @@
-var Task = require('./constructor/task');
-var taskRepo = require('./module/taskRepository');
-var userRepo = require('./module/userRepository');
-var projectRepo = require('./module/projectRepository');
+'use strict'
+
+const Task = require('./constructor/task');
+const taskRepo = require('./module/taskRepository');
+const userRepo = require('./module/userRepository');
+const projectRepo = require('./module/projectRepository');
 
 
-var task1 = new Task(taskRepo.get(1));
+const task1 = new Task(taskRepo.get(1));
 console.log(userRepo.get);
-var user = userRepo.get(1);
-var project = projectRepo.get(1);
+let user = userRepo.get(1);
+let project = projectRepo.get(1);
 
 task1.user = user;
 task1.project = project;

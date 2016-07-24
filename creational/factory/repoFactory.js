@@ -1,18 +1,20 @@
-var repoFactory = function () {
+'use strict'
+
+const repoFactory = () => {
   
   this.getRepo = function (repoType) {
     if (repoType === 'task') {
-      var taskRepo = require('../module/taskRepository')();
+      let taskRepo = require('../module/taskRepository')();
       return taskRepo;
     }
     
     if (repoType === 'user') {
-      var userRepo = require('../module/userRepository')();
+      let userRepo = require('../module/userRepository')();
       return userRepo;
     }
     
     if (repoType === 'project') {
-      var projectRepo = require('../module/projectRepository')();
+      let projectRepo = require('../module/projectRepository')();
       return projectRepo;
     }
   }

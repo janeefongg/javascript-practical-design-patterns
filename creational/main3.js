@@ -1,11 +1,13 @@
-var Task = require('./constructor/task');
-var repoFactory = require('./factory/repoFactory2');
+'use strict'
 
-var task1 = new Task(repoFactory.task.get(1));
-var task2 = new Task(repoFactory.task.get(2));
+const Task = require('./constructor/task');
+const repoFactory = require('./factory/repoFactory2');
 
-var user = repoFactory.user.get(1);
-var project = repoFactory.project.get(1);
+let task1 = new Task(repoFactory.task.get(1));
+let task2 = new Task(repoFactory.task.get(2));
+
+let user = repoFactory.user.get(1);
+let project = repoFactory.project.get(1);
 
 task1.user = user;
 task1.project = project;

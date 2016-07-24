@@ -1,6 +1,8 @@
-var repo = function () {
-  var called = 0;
-  var save = function (task) {
+'use strict'
+
+const repo = () => {
+  let called = 0;
+  const save = function (task) {
     called++;
     console.log('Saving ' + task + '. Called ' + called + " times.");
   }

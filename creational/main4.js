@@ -1,5 +1,7 @@
-var taskHandler = require('./singleton/taskHandler');
-var myrepo = require('./singleton/repo');
+'use strict'
+
+const taskHandler = require('./singleton/taskHandler');
+const myrepo = require('./singleton/repo');
 // var myrepo = repo();
 
 myrepo.save('from main4.js');

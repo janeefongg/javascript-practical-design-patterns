@@ -1,6 +1,8 @@
-var repoFactory = function () {
+'use strict'
 
-  this.getRepo = function (repoType) {
+class repoFactory {
+
+  getRepo (repoType) {
     if (repoType === 'task') {
       if (this.taskRepo) {
         console.log('Retrieving from cache');
@@ -12,12 +14,12 @@ var repoFactory = function () {
     }
 
     if (repoType === 'user') {
-      var userRepo = require('../module/userRepository');
+      let userRepo = require('../module/userRepository');
       return userRepo;
     }
 
     if (repoType === 'project') {
-      var projectRepo = require('../module/projectRepository');
+      let projectRepo = require('../module/projectRepository');
       return projectRepo;
     }
   }
