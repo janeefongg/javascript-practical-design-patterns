@@ -46,6 +46,7 @@ var Module = {
 - Used to restrict an object to one instance of that object across the application
 - Remembers the last time you used it
 - Hands back the same instance used before
+- Node.js uses CommonJS
 
 ```
 var TaskRepo = (function () {
