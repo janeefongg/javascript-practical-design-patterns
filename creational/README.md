@@ -1,3 +1,6 @@
+#Creational Pattern
+Used to create new instances of objects when we want something done
+
 ##Constructor
 - Use to create new objects with their own object scope
 - Uses the 'new' keyword
@@ -22,6 +25,7 @@ function ObjectName (param1, param2) {
 
 ##Module
 - Simple way to encapsulate methods
+- Bundle a group of like-methods
 - Creates a 'toolbox' of functions
 - Ex: service for HTTP calls or DB calls
 - Object literal wrapped in a function
