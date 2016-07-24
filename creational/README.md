@@ -47,6 +47,7 @@ var Module = {
 - Remembers the last time you used it
 - Hands back the same instance used before
 - Node.js uses CommonJS
+- Note: All services in AngularJS are singletons
 
 ```
 var TaskRepo = (function () {
