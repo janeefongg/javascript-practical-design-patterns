@@ -36,3 +36,8 @@ var Module = {
   }
 }
 ```
+
+##Factory
+- Pattern used to simplify object creation (abstraction)
+- Creating different objects based on need
+- Repository creation
