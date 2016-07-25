@@ -12,5 +12,15 @@ Allows a collection of objects to watch an object and be notified of changes
 - Allows for loosely coupled system
 - One object is the focal point
 - Group of objects watch for changes
+- Subject knows about everything
 
 ![Observer Pattern Notes](http://i.imgur.com/PpuLVG8.png)
+
+##Mediator
+Controls communication between objects so neight object has to be coupled to the others
+
+- Allows for loosely coupled system
+- One object manages all communication
+- Many to many relationship
+
+![Mediator Pattern Notes](http://i.imgur.com/ZtDHffz.png)
