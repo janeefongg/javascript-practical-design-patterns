@@ -19,4 +19,5 @@ Used to provide a simplified interface to a complicated system.
 - Think about the front of a building (clean exterior interface)
 - Facade hides the chaos/complexity from us
 - Simplifies the interface
+- Maintains same functionality
 - Ex: jQuery
