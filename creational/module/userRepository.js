@@ -15,7 +15,8 @@ const repo = () => {
   };
   
   return {
-    get, save
+    get: get,
+    save: save
   }
 }
 
