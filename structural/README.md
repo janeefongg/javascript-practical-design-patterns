@@ -12,3 +12,11 @@ Used to add functionality to an existing object, without being obtrusive.
 - Wraps an object
 - Protects existing objects
 - Allows extended functionality
+
+##Facade
+Used to provide a simplified interface to a complicated system.
+
+- Think about the front of a building (clean exterior interface)
+- Facade hides the chaos/complexity from us
+- Simplifies the interface
+- Ex: jQuery
