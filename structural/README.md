@@ -21,3 +21,12 @@ Used to provide a simplified interface to a complicated system.
 - Simplifies the interface
 - Maintains same functionality
 - Ex: jQuery
+
+##Flyweight
+Conserves memory by sharing portions of an object between objects.
+(Our task example had lots of non-unique data)
+
+- Share data across across objects
+- Results in a smaller memory footprint (good for mobile)
+- Like a boxer (a flyweight)
+- Note: Only useful if you have large numbers of objects
