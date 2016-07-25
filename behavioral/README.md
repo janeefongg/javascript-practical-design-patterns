@@ -24,3 +24,11 @@ Controls communication between objects so neight object has to be coupled to the
 - Many to many relationship
 
 ![Mediator Pattern Notes](http://i.imgur.com/ZtDHffz.png)
+
+##Command
+Encapsulates the calling of a method as an object
+
+- Fully decouples the execution from the implementation
+- Allows for less fragile implementation
+- Support undo operations
+- Supports auditing and logging of operations
