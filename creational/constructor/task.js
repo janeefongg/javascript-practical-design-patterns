@@ -10,12 +10,12 @@ class Task {
 
   // this replaces writing it on the prototype
   complete() {
-    console.log('Completing task: ' + this.name);
+    console.log(`Completing task: ${this.name}`);
     this.completed = true;
   }
 
   save() {
-    console.log('Saving task: ' + this.name);
+    console.log(`Saving task: ${this.name}`);
     Repo.save(this);
   }
 }

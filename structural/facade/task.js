@@ -13,20 +13,20 @@ class Task {
 const TaskService = function () {
   function complete (task) {
     task.completed = true;
-    console.log('completing task: ' + task.name);
+    console.log(`completing task: ${task.name}`);
   };
   
   function setCompleteDate (task) {
     task.completedDate = new Date();
-    console.log(task.name + ' completed on ' + task.completedDate);
+    console.log(`${task.name} completed on ${task.completedDate}`);
   };
   
   function notifyCompletion (task, user) {
-    console.log('Notifying ' + user + ' of the completion of ' + task.name);
+    console.log(`Notifying  ${user} of the completion of ${task.name}`);
   };
   
   function save (task) {
-    console.log('saving Task: ' + task.name);
+    console.log(`saving task: ${task.name}`);
   };
   
   return {

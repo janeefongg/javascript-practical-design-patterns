@@ -7,12 +7,12 @@ class Task {
   }
 
   complete() {
-    console.log('Completing task: ' + this.name);
+    console.log(`Completing task: ${this.name}`);
     this.completed = true;
   }
 
   save() {
-    console.log('Saving task: ' + this.name);
+    console.log(`Saving task: ${this.name}`);
   }
 }
 

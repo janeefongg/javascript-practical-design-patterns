@@ -7,7 +7,7 @@ const repo = (function () {
   let commands = [];
 
   const get = function (id) {
-    console.log('Getting task ' + id);
+    console.log(`Getting task ${id}`);
     return {
       name: 'new task from db'
     }
@@ -15,7 +15,7 @@ const repo = (function () {
 
   const save = function (task) {
     repo.tasks[task.id] = task;
-    console.log('Saving ' + task.name + ' to the db');
+    console.log(`Saving ${task.name} to the db`);
   };
 
   const replay = function () {
