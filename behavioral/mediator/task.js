@@ -8,7 +8,7 @@ class Task {
     this.user = data.user;
     this.completed = false;
   }
-  
+
   complete() {
     console.log(`Completing task: ${this.name}`);
     this.completed = true;

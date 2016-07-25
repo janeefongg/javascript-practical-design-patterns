@@ -95,9 +95,9 @@ const task1 = new ObservableTask({
   user: 'Jane'
 });
 
-var notify = new notificationService();
-var log = new loggingService();
-var audit = new auditingService();
+const notify = new notificationService();
+const log = new loggingService();
+const audit = new auditingService();
 
 task1.addObserver(notify.update);
 task1.addObserver(log.update);
