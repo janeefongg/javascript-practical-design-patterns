@@ -2,6 +2,7 @@
 Concerned with how objects are made up and simplify relationships between objects.
 
 - Deal with the relationship of objects
+- Alter composition of objects
 - Extend functionality/Simplify functionality
 - How an object relates to a separate object
 
@@ -11,7 +12,7 @@ Used to add functionality to an existing object, without being obtrusive.
 - More complete inheritance
 - Wraps an object
 - Protects existing objects
-- Allows extended functionality
+- Allows adding extended functionality
 
 ##Facade
 Used to provide a simplified interface to a complicated system.
