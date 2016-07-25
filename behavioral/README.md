@@ -13,4 +13,4 @@ Allows a collection of objects to watch an object and be notified of changes
 - One object is the focal point
 - Group of objects watch for changes
 
-![Observer Pattern Notes](http://imgur.com/a/fdPE2)
+![Observer Pattern Notes](http://i.imgur.com/PpuLVG8.png)
